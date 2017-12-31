@@ -70,4 +70,4 @@ def sendMessage():
     #     conn.close()
 
 if __name__ == "__main__":
-    app.run(port=80)
+    app.run(host = 'tokendl.com',port=80)
