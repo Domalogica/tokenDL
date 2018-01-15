@@ -22,11 +22,11 @@ def token():
     return render_template('tokens.html')
 
 @app.route('/operations')
-def token():
+def operations():
     return render_template('operations.html')
 
 @app.route('/maps')
-def token():
+def maps():
     return render_template('maps.html')
 
 @app.route('/showSignUp')
