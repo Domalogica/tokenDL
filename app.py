@@ -84,4 +84,4 @@ def sendMessage():
     #     conn.close()
 
 if __name__ == "__main__":
-    app.run(host = 'tokendl.com',port=80)
+    app.run(host='tokendl.com',port=80)
