@@ -21,6 +21,14 @@ def main():
 def token():
     return render_template('tokens.html')
 
+@app.route('/operations')
+def token():
+    return render_template('operations.html')
+
+@app.route('/maps')
+def token():
+    return render_template('maps.html')
+
 @app.route('/showSignUp')
 def showSignUp():
     return render_template('signup.html')
