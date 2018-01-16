@@ -3,7 +3,8 @@ from flaskext.mysql import MySQL
 from werkzeug import generate_password_hash, check_password_hash
 import requests
 mysql = MySQL()
-app = Flask(__name__, static_url_path='/static/')
+app._static_folder = os.path.abspath("static/")
+app = Flask(__name__)
 
 # MySQL configurations
 app.config['MYSQL_DATABASE_USER'] = 'root'
