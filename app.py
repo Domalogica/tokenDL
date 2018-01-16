@@ -87,11 +87,5 @@ def sendMessage():
 
 
 
-@app.route('/lib/bootstrap/css/bootstrap.min.css')
-def main():
-    return render_template('bootstrap.min.css')
-
-
-
 if __name__ == "__main__":
     app.run(host='tokendl.com',port=80)
