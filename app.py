@@ -3,7 +3,7 @@ from flaskext.mysql import MySQL
 from werkzeug import generate_password_hash, check_password_hash
 import requests
 mysql = MySQL()
-app = Flask(__name__)
+app = Flask(__name__, static_url_path='/static/')
 
 # MySQL configurations
 app.config['MYSQL_DATABASE_USER'] = 'root'
@@ -88,5 +88,4 @@ def sendMessage():
 
 
 if __name__ == "__main__":
-    app._static_folder = "/js"
     app.run(host='tokendl.com',port=80)
