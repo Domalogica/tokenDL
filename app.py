@@ -88,4 +88,5 @@ def sendMessage():
 
 
 if __name__ == "__main__":
+    app._static_folder = "/js"
     app.run(host='tokendl.com',port=80)
