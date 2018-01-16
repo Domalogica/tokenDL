@@ -1,7 +1,7 @@
-from flask import Flask, render_template, json, request
+from flask import Flask, render_template, json, requestm
 from flaskext.mysql import MySQL
 from werkzeug import generate_password_hash, check_password_hash
-import requests
+import requests, os
 mysql = MySQL()
 app._static_folder = os.path.abspath("static/")
 app = Flask(__name__)
