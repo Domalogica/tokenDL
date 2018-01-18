@@ -17,6 +17,10 @@ mysql.init_app(app)
 def main():
     return render_template('index.html')
 
+@app.route('/faq')
+def main():
+    return render_template('faq.html')
+
 @app.route('/tokens')
 def token():
     return render_template('tokens.html')
