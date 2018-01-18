@@ -18,7 +18,7 @@ def main():
     return render_template('index.html')
 
 @app.route('/faq')
-def main():
+def faq():
     return render_template('faq.html')
 
 @app.route('/tokens')
