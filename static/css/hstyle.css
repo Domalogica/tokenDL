@@ -170,8 +170,9 @@ h1, h2, h3, h4, h5, h6 {
 
 #hero h2 {
   color: #eee;
-  margin-bottom: 50px;
-  font-size: 24px;
+  margin-bottom: 30px;
+  line-height: 15px;
+  font-size: 18px;
 }
 
 @media (max-width: 768px) {
@@ -486,6 +487,12 @@ body.mobile-nav-active #mobile-nav-toggle {
   margin-bottom: 10px;
 }
 
+#about .about-container .background2 {
+  min-height: 300px;
+  background: url(../img/about-img2.jpg) center top no-repeat;
+  margin-bottom: 10px;
+}
+
 #about .about-container .content {
   background: #fff;
 }
@@ -557,6 +564,13 @@ body.mobile-nav-active #mobile-nav-toggle {
 #facts .counters span {
   font-size: 48px;
   display: block;
+  color: #2dc997;
+}
+
+
+#facts .counters span.rb {
+  font-size: 48px;
+  display: inline;
   color: #2dc997;
 }
 
