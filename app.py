@@ -94,4 +94,4 @@ def sendMessage():
 
 
 if __name__ == "__main__":
-    app.run(host='tokendl.com', port=80)
+    app.run(host='194.67.216.111', port=80)
