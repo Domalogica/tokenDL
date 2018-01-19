@@ -112,8 +112,8 @@ jQuery(document).ready(function( $ ) {
 
   // jQuery counterUp
   $('[data-toggle="counter-up"]').counterUp({
-    // delay: 10,
-    time: 500
+    delay: 0,
+    time: 10000
   });
 
 
