@@ -1,143 +1,113 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="utf-8" />
-    <link rel="apple-touch-icon" sizes="76x76" href="../static/apple-icon.png" />
-    <link rel="icon" type="image/png" href="../static/favicon.png" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-    <title>Токены</title>
-    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
-    <meta name="viewport" content="width=device-width" />
-    <!-- Bootstrap core CSS     -->
-    <link href="../static/bootstrap.min.css" rel="stylesheet" />
-    <!--  Material Dashboard CSS    -->
-    <link href="../static/material-dashboard.css?v=1.2.0" rel="stylesheet" />
-    <!--  CSS for Demo Purpose, don't include it in your project     -->
-    <link href="../static/demo.css" rel="stylesheet" />
-    <!--     Fonts and icons     -->
-    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
-    <link href='http://fonts.googleapis.com/css?family=Roboto:400,700,300|Material+Icons' rel='stylesheet' type='text/css'>
+  <meta charset="utf-8">
+  <title>Domalogiса</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="" name="keywords">
+  <meta content="" name="description">
+
+  <!-- Favicons -->
+  <link href="../static/img/favicon.jpg" rel="icon">
+  <link href="../static/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Poppins:300,400,500,700" rel="stylesheet">
+
+  <!-- Bootstrap CSS File -->
+  <link href="../static/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Libraries CSS Files -->
+  <link href="../static/lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="../static/lib/animate/animate.min.css" rel="stylesheet">
+
+  <!-- Main Stylesheet File -->
+  <link href="../static/css/hstyle.css" rel="stylesheet">
+  <link href="../static/css/hreset.css" rel="stylesheet">
+  <link href="../static/css/hstyles.css" rel="stylesheet">
+
+
+
 </head>
 
 <body>
-    <div class="wrapper">
-        <div class="sidebar" data-color="purple" data-image="../static/sidebar-1.jpg">
-            <!--
-        Tip 1: You can change the color of the sidebar using: data-color="purple | blue | green | orange | red"
+  <!--==========================
+  Header
+  ============================-->
+ <header id="header" class="d6">
+    <div class="container">
 
-        Tip 2: you can also add an image using data-image tag
-    -->
-            <div class="logo">
-                <a href="/" class="simple-text">
-                    Domalogica
-                </a>
-            </div>
-            <div class="sidebar-wrapper">
-                <ul class="nav">
-                    <li class="active">
-                        <a href="./tokens">
-                            <i class="material-icons">content_paste</i>
-                            <p>Токены</p>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="./operations">
-                            <i class="material-icons">library_books</i>
-                            <p>Операции</p>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="./maps">
-                            <i class="material-icons">location_on</i>
-                            <p>Карта водоматов</p>
-                        </a>
-                    </li>
-                </ul>
-            </div>
+      <div id="logo" class="pull-left">
+        <a href="http://tokendl.com/"><img src="../static/img/logo.png" alt="" title="" /></img></a>
+        <!-- Uncomment below if you prefer to use a text logo -->
+        <!--<h1><a href="#hero">Regna</a></h1>-->
+      </div>
+
+      <nav id="nav-menu-container">
+        <ul class="nav-menu">
+          <li><a href="http://tokendl.com/">Главная</a></li>
+          <li class="menu-active"><a href="/tokens">Токены</a></li>
+          <li><a href="https://docs.google.com/document/d/1B0caopi0IoPalRTeNGz1JncIOTaRb4SlW4j3Q0koOmk/edit?usp=sharing">О проекте</a></li>
+          <li><a href="/faq">FAQ</a></li>
+        </ul>
+      </nav><!-- #nav-menu-container -->
+    </div>
+  </header><!-- #header -->
+
+<!--==========================
+    Hero Section
+  ============================-->
+
+  <div class="cd-user-modal"> <!-- все формы на фоне затемнения-->
+    <div class="cd-user-modal-container"> <!-- основной контейнер -->
+      
+      <div id="cd-selected"> <!-- форма регистрации -->
+        <form class="cd-form" method="post">
+          <p class="fieldset">
+            <label class="image-replace cd-username" for="signup-username">Имя пользователя</label>
+            <input name="name" class="full-width has-padding has-border" id="signup-username" type="text" placeholder="Имя пользователя">
+            <span class="cd-error-message">Здесь сообщение об ошибке!</span>
+          </p>
+
+          <p class="fieldset">
+            <label class="image-replace cd-password" for="signup-password">Номер телефона</label>
+            <input name="phone" class="full-width has-padding has-border" id="signup-password" type="text" placeholder="Номер телефона">
+            <span class="cd-error-message">Здесь сообщение об ошибке!</span>
+          </p>
+
+          <p class="fieldset">
+            <label class="image-replace cd-email" for="signup-email">Комментарии</label>
+            <input name="comments" class="full-width has-padding has-border" id="signup-email" type="text" placeholder="Комментарии">
+            <span class="cd-error-message">Здесь сообщение об ошибке!</span>
+          </p>
+          <p class="fieldset">
+            <input class="full-width has-padding" type="submit" value="Отправить">
+          </p>
+        </form>
+
+        <!-- <a href="#0" class="cd-close-form">Close</a> -->
+      </div> <!-- cd-signup -->
+    </div> <!-- cd-user-modal-container -->
+  </div> <!-- cd-user-modal -->
+
+<!--==========================
+    Hero Section
+  ============================-->
+
+  
+ <br>       <br>       <br>       <br>       
+    <!--==========================
+      Facts Section
+    ============================-->
+    <section id="facts">
+      <div class="container wow fadeIn" style="visibility: visible; animation-name: fadeIn;">
+        <div class="section-header">
+          <h3 class="section-title">Договора</h3>
+          <p class="section-description">Информация о приобретенных токенах.</p>
         </div>
-        <div class="main-panel">
-            <nav class="navbar navbar-transparent navbar-absolute">
-                <div class="container-fluid">
-                    <div class="navbar-header">
-                        <button type="button" class="navbar-toggle" data-toggle="collapse">
-                            <span class="sr-only">Toggle navigation</span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                        </button>
-                        <a class="navbar-brand" href="http://tokendl.com/">Главная</a>
-                    </div>
-                </div>
-            </nav>
-            <div class="content">
-                <div class="container-fluid">
-                    <div class="row">
-                        <div class="col-lg-3 col-md-6 col-sm-6">
-                            <div class="card card-stats">
-                                <div class="card-header" data-background-color="orange">
-                                    <i class="material-icons">content_copy</i>
-                                </div>
-                                <div class="card-content">
-                                    <p class="category">Всего токенов</p>
-                                    <h3 class="title">15000
-                                    </h3>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-6 col-sm-6">
-                            <div class="card card-stats">
-                                <div class="card-header" data-background-color="blue">
-                                    <i class="fa fa-pie-chart"></i>
-                                </div>
-                                <div class="card-content">
-                                    <p class="category">Осталось токенов</p>
-                                    <h3 class="title">4950</h3>
-                                </div>
-                               
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-6 col-sm-6">
-                            <div class="card card-stats">
-                                <div class="card-header" data-background-color="green">
-                                    <i class="fa fa-rub"></i>
-                                </div>
-                                <div class="card-content">
-                                    <p class="category">Цена токена</p>
-                                    <h3 class="title">2500₽</h3>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-6 col-sm-6">
-                            <div class="card card-stats">
-                                <div class="card-header" data-background-color="red">
-                                    <i class="fa fa-users"></i>
-                                </div>
-                                <div class="card-content">
-                                    <p class="category">Всего участников</p>
-                                    <h3 class="title">23</h3>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-        </div>
-        <div class="content">
-            <div class="container-fluid">
-                <nav class="navbar navbar-transparent navbar-absolute">
-                    <div class="container-fluid">
-                        <div class="navbar-header">
-                            <a class="navbar-brand" href="#">Распределение токенов по участникам</a>
-                        </div>
-                    </div>
-                </nav>
-                <br><br><br><br>
-                <div class="row">
+        <div class="row counters">
                     <div class="col-md-12">
                         <div class="card">
-                            <div class="card-header" data-background-color="purple">
-                                <h4 class="title">Договора</h4>
-                                <p class="category">Тут информация о приобретенных токенах</p>
-                            </div>
                             <div class="card-content table-responsive">
                                 <table class="table">
                                     <thead class="text-primary">
@@ -264,30 +234,91 @@
                                     </tbody>
                                 </table>
                             </div>
-                        </div>
+                        
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
-</body>
-<!--   Core JS Files   -->
-<script src="../static/jquery-3.2.1.min.js" type="text/javascript"></script>
-<script src="../static/bootstrap.min.js" type="text/javascript"></script>
-<script src="../static/material.min.js" type="text/javascript"></script>
-<!--  Charts Plugin -->
-<script src="../static/chartist.min.js"></script>
-<!--  Dynamic Elements plugin -->
-<script src="../static/arrive.min.js"></script>
-<!--  PerfectScrollbar Library -->
-<script src="../static/perfect-scrollbar.jquery.min.js"></script>
-<!--  Notifications Plugin    -->
-<script src="../static/bootstrap-notify.js"></script>
-<!--  Google Maps Plugin    -->
-<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY_HERE"></script>
-<!-- Material Dashboard javascript methods -->
-<script src="../static/material-dashboard.js?v=1.2.0"></script>
-<!-- Material Dashboard DEMO methods, don't include it in your project! -->
-<script src="../static/demo.js"></script>
 
-</html>
+        </div>
+
+      </div>
+    </section><!-- #facts -->
+
+    <!--==========================
+      Services Section
+    ============================-->
+  
+
+    <!--==========================
+    Call To Action Section
+    ============================-->
+    <section id="call-to-action">
+      <div class="container wow fadeIn" style="visibility: visible; animation-name: fadeIn;">
+        <div class="row">
+          <div class="col-lg-9 text-center text-lg-left">
+            <h3 class="cta-title">Станьте участником</h3>
+            <p class="cta-text">Стань участником перспективного  проекта. Инвестируй в бизнес по продаже свежей  воды через  сеть вендинговых аппаратов.</p>
+          </div>
+          <div class="col-lg-3 cta-btn-container text-center main-dl">
+            <a class="cta-btn align-middle" href="#">Инвестировать</a>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- #call-to-action -->
+
+  
+
+  <!--==========================
+    Footer
+  ============================-->
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="copyright">
+        © Domalogica 2018
+      </div>
+      <div class="credits">
+        <!--
+          All the links in the footer should remain intact.
+          You can delete the links only if you purchased the pro version.
+          Licensing information: https://bootstrapmade.com/license/
+          Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=Regna
+        -->
+        Наука, технологии и инженерное дело в Махачкале, респ. Дагестан.
+      </div>
+    </div>
+  </footer><!-- #footer -->
+
+  <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+
+   <!-- JavaScript Libraries -->
+  <script src="../static/lib/jquery/jquery.min.js"></script>
+  <script src="../static/lib/jquery/jquery-migrate.min.js"></script>
+  <script src="../static/lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="../static/lib/easing/easing.min.js"></script>
+  <script src="../static/lib/wow/wow.min.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD8HeI8o-c1NppZA-92oYlXakhDPYR7XMY"></script>
+
+  <script src="../static/lib/waypoints/waypoints.min.js"></script>
+  <script src="../static/lib/counterup/counterup.min.js"></script>
+  <script src="../static/lib/superfish/hoverIntent.js"></script>
+  <script src="../static/lib/superfish/superfish.min.js"></script>
+
+  <!-- Contact Form JavaScript File -->
+  <script src="../static/contactform/contactform.js"></script>
+
+  <!-- Template Main Javascript File -->
+  <script src="../static/js/hmain.js"></script>
+  <script src="../static/js/hmainMen.js"></script>
+  <script src="../static/js/hmodernizr.js"></script>
+
+
+
+</body></html>
+
