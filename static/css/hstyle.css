@@ -132,10 +132,6 @@ h1, h2, h3, h4, h5, h6 {
   transition: all 0.5s;
 }
 
-.d6 {
-  background: #666;
-}
-
 #header1 {
   padding: 30px 0;
   height: 85px;
@@ -1016,3 +1012,10 @@ body.mobile-nav-active #mobile-nav-toggle {
   font-size: 13px;
   color: #ccc;
 }
+
+
+
+.d6 {
+  background: #666;
+}
+
