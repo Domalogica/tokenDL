@@ -45,14 +45,11 @@ def sendMessage():
     _name = request.form['name']
     _phone = request.form['phone']
     _comments = request.form['comments']
-    _email = request.form['email']
     text = """
     Имя: %s
 Телефон: %s
 Комментарий: %s
-Email: %s
-    """ % (_name, _phone, _comments, _email)
-    print(text)
+    """ % (_name, _phone, _comments)
     if _name or _phone or _comments:
         url = "https://api.telegram.org/bot527562365:AAFDyCml1bgH7D5mvng6KcxKI-dTvAN6Ybc/sendMessage?chat_id=167315364&text=%s" % (text)
         requests.post(url)   
