@@ -273,30 +273,34 @@
             <div class="form">
               <div id="sendmessage">Your message has been sent. Thank you!</div>
               <div id="errormessage"></div>
-              <form action="" method="post" role="form" class="contactForm">
-                <div class="form-group">
-                  <input type="text" name="name" class="form-control" id="name" placeholder="Имя пользовавтеля" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
-                  <div class="validation"></div>
-                </div>
-                <div class="form-group">
-                  <input type="email" class="form-control" name="email" id="email" placeholder="Email адрес" data-rule="email" data-msg="Please enter a valid email" />
-                  <div class="validation"></div>
-                </div>
-                <div class="form-group">
-                  <input type="text" class="form-control" name="phone" id="subject" placeholder="Номен телефона" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
-                  <div class="validation"></div>
-                </div>
-                <div class="form-group">
-                  <textarea class="form-control" name="comments" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Сообщение"></textarea>
-                  <div class="validation"></div>
-                </div>
-                
-                <p class="fieldset">
-                  <input class="full-width has-padding" type="submit" value="Отправить">
-                </p>
+              <form class="cd-form" method="post">
+          <p class="fieldset">
+            <label class="image-replace cd-username" for="signup-username">Имя пользователя</label>
+            <input name="name" class="full-width has-padding has-border" id="signup-username" type="text" placeholder="Имя пользователя">
+            <span class="cd-error-message">Здесь сообщение об ошибке!</span>
+          </p>
 
-                <div class="text-center"><button type="submit">Отправить</button></div>
-              </form>
+          <p class="fieldset">
+            <label class="image-replace cd-password" for="signup-password">Номер телефона</label>
+            <input name="phone" class="full-width has-padding has-border" id="signup-password" type="text" placeholder="Номер телефона">
+            <span class="cd-error-message">Здесь сообщение об ошибке!</span>
+          </p>
+
+          <p class="fieldset">
+            <label class="image-replace cd-password" for="signup-password">Email</label>
+            <input name="email" class="full-width has-padding has-border" id="signup-password" type="text" placeholder="Номер телефона">
+            <span class="cd-error-message">Здесь сообщение об ошибке!</span>
+          </p>
+
+          <p class="fieldset">
+            <label class="image-replace cd-email" for="signup-email">Комментарии</label>
+            <input name="comments" class="full-width has-padding has-border" id="signup-email" type="text" placeholder="Комментарии">
+            <span class="cd-error-message">Здесь сообщение об ошибке!</span>
+          </p>
+          <p class="fieldset">
+            <input class="full-width has-padding" type="submit" value="Отправить">
+          </p>
+        </form>
             </div>
           </div>
 
