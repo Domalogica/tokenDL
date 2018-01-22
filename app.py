@@ -52,6 +52,7 @@ def sendMessage():
 Комментарий: %s
 Email: %s
     """ % (_name, _phone, _comments, _email)
+    print(text)
     if _name or _phone or _comments:
         url = "https://api.telegram.org/bot527562365:AAFDyCml1bgH7D5mvng6KcxKI-dTvAN6Ybc/sendMessage?chat_id=167315364&text=%s" % (text)
         requests.post(url)   
