@@ -16,13 +16,16 @@ html * {
 
 .sstrong {
   font-weight: bold;
-  font-size: 20px;
+}
+
+.cbb {
+  color: #fff;
 }
 
 body {
   font-size: 100%;
   font-family: "PT Sans", sans-serif;
-  color: rgba(255, 255, 255, 0.75);
+  color: #3f3f3f;
   background-color: white;
 }
 
