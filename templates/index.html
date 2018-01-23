@@ -25,8 +25,9 @@
   <link href="../static/css/hstyle.css" rel="stylesheet">
   <link href="../static/css/hreset.css" rel="stylesheet">
   <link href="../static/css/hstyles.css" rel="stylesheet">
+  <link href="../static/css/counter.css" rel="stylesheet">
 
-
+  
 
 </head>
 
@@ -96,18 +97,13 @@
     </div> <!-- cd-user-modal-container -->
   </div> <!-- cd-user-modal -->
 
-
   <section id="hero">
     <div class="hero-container main-dl">
-      <h1>СВЕЖАЯ ВОДА.</h1>
-      <div class="progress" style="height: 45px;" >
-        <div class="progress-bar bg-info" role="progressbar" style="width: 1.6%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"><!-- Продано 1.6% / 80 (токенов) --></div>
-  <div class="progress-bar bg-success" role="progressbar" style="width: 98.4%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100">Токенов в продаже 98.4 / 4920</div>
+      <b><span class="numcard-desc sstrong">1 ЭТАП ПРОДАЖИ ТОКЕНОВ ЗАКАНЧИВАЕТСЯ ЧЕРЕЗ:</span>
+      <div class="row justify-content-center">
+        <div class="countdown-timer" data-date="2018-02-01"></div>
       </div>
 
-      <br><br>
-
-      <h2>Стань участником перспективного  проекта. Инвестируй в бизнес по продаже свежей  воды через  сеть вендинговых аппаратов.</h2>
       <a href="#0" class="btn-get-started">Инвестировать</a>
     </div>
 
@@ -120,31 +116,70 @@
           <p class="section-description">Информация о приобретенных токенах, цене за токен и о количестве оставшихся токенах.</p>
         </div>
         <div class="row counters">
+<!-- 
+<span id="primo" class="countup" cup-end="100" cup-append="%" cup-prepend=""></span>
+<br>
+<span id="secondo" class="countup" cup-end="1500" cup-duration="2000"></span> -->
+
 
           <div class="col-lg-3 col-6 text-center">
-            <span data-toggle="counter-up">15000</span>
+            <span id="primo" class="countup" cup-end="15000" cup-append="" cup-prepend=""></span>
             <p>Всего токенов</p>
           </div>
 
           <div class="col-lg-3 col-6 text-center">
-            <span data-toggle="counter-up">4950</span>
+            <span id="primo" class="countup" cup-end="4950" cup-append="" cup-prepend=""></span>
             <p>Токенов в продаже</p>
           </div>
 
           <div class="col-lg-3 col-6 text-center">
-            <span data-toggle="counter-up" class="rb">2500</span><span class="rb">₽</span>
+            <span class="countup" cup-end="2500" cup-append="₽" cup-prepend=""></span>
             <p>Цена токена</p>
           </div>
 
           <div class="col-lg-3 col-6 text-center">
-            <span data-toggle="counter-up">23</span>
+            <span class="countup" cup-end="23" cup-append="" cup-prepend=""></span>
             <p>Всего участников</p>
           </div>
+
 
         </div>
 
       </div>
     </section><!-- #facts -->
+ <section id="services">
+      <div class="container wow fadeIn">
+        <div class="section-header">
+          <h3 class="section-title">Этапы</h3>
+          <p class="section-description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque</p>
+        </div>
+        <div class="row">
+          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
+            <div class="box">
+              <div class="icon"><a href=""><i class="fa fa-bar-chart"></i></a></div>
+              <h4 class="title"><a href="">2500₽</a></h4>
+              <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.4s">
+            <div class="box">
+              <div class="icon"><a href=""><i class="fa fa-bar-chart"></i></a></div>
+              <h4 class="title"><a href="">3000₽</a></h4>
+              <p class="description">Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat tarad limino ata</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.6s">
+            <div class="box">
+              <div class="icon"><a href=""><i class="fa fa-bar-chart"></i></a></div>
+              <h4 class="title"><a href="">3500₽</a></h4>
+              <p class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- #services -->
 
  <main id="main">
 
@@ -375,6 +410,25 @@
   <script src="../static/js/hmain.js"></script>
   <script src="../static/js/hmainMen.js"></script>
   <script src="../static/js/hmodernizr.js"></script>
+  
+
+  <script src="../static/js/counter.js"></script>
+  <script>
+    $(function() {
+      $('.countdown-timer').bs_countdown_timer();
+    });
+  </script>
+  <script>
+  var cu = new counterUp({
+    start: 0, 
+    duration: 2000,
+    intvalues: true,
+    interval: 100,
+    prepend: '€',
+    append: '.00'
+  });
+  cu.start();
+  </script>
 
 </body>
 </html>
