@@ -26,9 +26,230 @@
   <link href="../static/css/hreset.css" rel="stylesheet">
   <link href="../static/css/hstyles.css" rel="stylesheet">
   <link href="../static/css/counter.css" rel="stylesheet">
-
+  
+  
   
 
+  <link rel='stylesheet prefetch' href='http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.1.0/css/font-awesome.min.css'>
+  
+        <style>
+        /* NOTE: The styles were added inline because Prefixfree needs access to your styles and they must be inlined if they are on local disk! */
+        body {
+    background: #f8f8f8;
+  }
+
+  * {
+    box-sizing: border-box;
+    transition: .15s ease-in-out;
+  }
+
+  h1 {
+    font-family: helvetica neue,helvetica,arial,sans-serif;
+    font-size: 35px;
+    font-weight: 200;
+    color: #a9a9a9;
+    margin: 94px auto 20px auto;
+  }
+
+  body {
+    text-align: center;
+  }
+
+  .logo {
+    display: inline-block;
+    position: relative;
+    left: 0;
+    top: 0;
+    padding: 15px;
+    font-size: 22.5px;
+    line-height: 22.5px;
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    overflow: hidden;
+    border-radius: 10px;
+    margin: 20px 20px 20px 0;
+    color: white;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.25);
+  }
+
+  .logo:active {
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.25);
+    left: 0px;
+    top: 0px;
+  }
+
+  .facebook {
+    background: #3b5998;
+    /* Old browsers */
+    background: -moz-linear-gradient(-45deg, #3b5998 0%, #3b5998 100%);
+    /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, right bottom, color-stop(0%, #3b5998), color-stop(100%, #3b5998));
+    /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(-45deg, #3b5998 0%, #3b5998 100%);
+    /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(-45deg, #3b5998 0%, #3b5998 100%);
+    /* Opera 11.10+ */
+    background: -ms-linear-gradient(-45deg, #3b5998 0%, #3b5998 100%);
+    /* IE10+ */
+    background: linear-gradient(135deg, #3b5998 0%, #3b5998 100%);
+    /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3b5998', endColorstr='#3b5998',GradientType=1 );
+    /* IE6-9 fallback on horizontal gradient */
+  }
+
+  .facebook:hover {
+    background: #3b5998;
+    /* Old browsers */
+    background: -moz-linear-gradient(-45deg, #3b5998 0%, #173062 100%);
+    /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, right bottom, color-stop(0%, #3b5998), color-stop(100%, #173062));
+    /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(-45deg, #3b5998 0%, #173062 100%);
+    /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(-45deg, #3b5998 0%, #173062 100%);
+    /* Opera 11.10+ */
+    background: -ms-linear-gradient(-45deg, #3b5998 0%, #173062 100%);
+    /* IE10+ */
+    background: linear-gradient(135deg, #3b5998 0%, #173062 100%);
+    /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3b5998', endColorstr='#173062',GradientType=1 );
+    /* IE6-9 fallback on horizontal gradient */
+  }
+
+  .logo:hover .fa-facebook {
+    text-shadow: 1px 1px 0px #173062, 2px 2px 0px #173062, 3px 3px 0px #173062, 4px 4px 0px #173062, 5px 5px 0px #173062, 6px 6px 0px #173062, 7px 7px 0px #173062, 8px 8px 0px #173062, 9px 9px 0px #173062, 10px 10px 0px #173062, 11px 11px 0px #173062, 12px 12px 0px #173062, 13px 13px 0px #173062, 14px 14px 0px #173062, 15px 15px 0px #173062, 16px 16px 0px #173062, 17px 17px 0px #173062, 18px 18px 0px #173062, 19px 19px 0px #173062, 20px 20px 0px #173062, 21px 21px 0px #173062, 22px 22px 0px #173062, 23px 23px 0px #173062, 24px 24px 0px #173062, 25px 25px 0px #173062, 26px 26px 0px #173062, 27px 27px 0px #173062, 28px 28px 0px #173062, 29px 29px 0px #173062, 30px 30px 0px #173062, 31px 31px 0px #173062, 32px 32px 0px #173062, 33px 33px 0px #173062, 34px 34px 0px #173062, 35px 35px 0px #173062, 36px 36px 0px #173062, 37px 37px 0px #173062, 38px 38px 0px #173062, 39px 39px 0px #173062, 40px 40px 0px #173062, 41px 41px 0px #173062, 42px 42px 0px #173062, 43px 43px 0px #173062, 44px 44px 0px #173062, 45px 45px 0px #173062, 46px 46px 0px #173062, 47px 47px 0px #173062, 48px 48px 0px #173062, 49px 49px 0px #173062, 50px 50px 0px #173062, 51px 51px 0px #173062;
+  }
+
+  .twitter {
+    background: #55acee;
+    /* Old browsers */
+    background: -moz-linear-gradient(-45deg, #55acee 0%, #55acee 100%);
+    /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, right bottom, color-stop(0%, #55acee), color-stop(100%, #55acee));
+    /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(-45deg, #55acee 0%, #55acee 100%);
+    /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(-45deg, #55acee 0%, #55acee 100%);
+    /* Opera 11.10+ */
+    background: -ms-linear-gradient(-45deg, #55acee 0%, #55acee 100%);
+    /* IE10+ */
+    background: linear-gradient(135deg, #55acee 0%, #55acee 100%);
+    /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#55acee', endColorstr='#55acee',GradientType=1 );
+    /* IE6-9 fallback on horizontal gradient */
+  }
+
+  .twitter:hover {
+    background: #55acee;
+    /* Old browsers */
+    background: -moz-linear-gradient(-45deg, #55acee 0%, #2274b2 100%);
+    /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, right bottom, color-stop(0%, #55acee), color-stop(100%, #2274b2));
+    /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(-45deg, #55acee 0%, #2274b2 100%);
+    /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(-45deg, #55acee 0%, #2274b2 100%);
+    /* Opera 11.10+ */
+    background: -ms-linear-gradient(-45deg, #55acee 0%, #2274b2 100%);
+    /* IE10+ */
+    background: linear-gradient(135deg, #55acee 0%, #2274b2 100%);
+    /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#55acee', endColorstr='#2274b2',GradientType=1 );
+    /* IE6-9 fallback on horizontal gradient */
+  }
+
+  .logo:hover .fa-twitter {
+    text-shadow: 1px 1px 0px #2274b2, 2px 2px 0px #2274b2, 3px 3px 0px #2274b2, 4px 4px 0px #2274b2, 5px 5px 0px #2274b2, 6px 6px 0px #2274b2, 7px 7px 0px #2274b2, 8px 8px 0px #2274b2, 9px 9px 0px #2274b2, 10px 10px 0px #2274b2, 11px 11px 0px #2274b2, 12px 12px 0px #2274b2, 13px 13px 0px #2274b2, 14px 14px 0px #2274b2, 15px 15px 0px #2274b2, 16px 16px 0px #2274b2, 17px 17px 0px #2274b2, 18px 18px 0px #2274b2, 19px 19px 0px #2274b2, 20px 20px 0px #2274b2, 21px 21px 0px #2274b2, 22px 22px 0px #2274b2, 23px 23px 0px #2274b2, 24px 24px 0px #2274b2, 25px 25px 0px #2274b2, 26px 26px 0px #2274b2, 27px 27px 0px #2274b2, 28px 28px 0px #2274b2, 29px 29px 0px #2274b2, 30px 30px 0px #2274b2, 31px 31px 0px #2274b2, 32px 32px 0px #2274b2, 33px 33px 0px #2274b2, 34px 34px 0px #2274b2, 35px 35px 0px #2274b2, 36px 36px 0px #2274b2, 37px 37px 0px #2274b2, 38px 38px 0px #2274b2, 39px 39px 0px #2274b2, 40px 40px 0px #2274b2;
+  }
+
+  .linkedin {
+    background: #0e87bf;
+    /* Old browsers */
+    background: -moz-linear-gradient(-45deg, #0e87bf 0%, #0e87bf 100%);
+    /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, right bottom, color-stop(0%, #0e87bf), color-stop(100%, #0e87bf));
+    /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(-45deg, #0e87bf 0%, #0e87bf 100%);
+    /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(-45deg, #0e87bf 0%, #0e87bf 100%);
+    /* Opera 11.10+ */
+    background: -ms-linear-gradient(-45deg, #0e87bf 0%, #0e87bf 100%);
+    /* IE10+ */
+    background: linear-gradient(135deg, #0e87bf 0%, #0e87bf 100%);
+    /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0e87bf', endColorstr='#0e87bf',GradientType=1 );
+    /* IE6-9 fallback on horizontal gradient */
+  }
+
+  .linkedin:hover {
+    background: #0e87bf;
+    /* Old browsers */
+    background: -moz-linear-gradient(-45deg, #0e87bf 0%, #075e86 100%);
+    /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, right bottom, color-stop(0%, #0e87bf), color-stop(100%, #075e86));
+    /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(-45deg, #0e87bf 0%, #075e86 100%);
+    /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(-45deg, #0e87bf 0%, #075e86 100%);
+    /* Opera 11.10+ */
+    background: -ms-linear-gradient(-45deg, #0e87bf 0%, #075e86 100%);
+    /* IE10+ */
+    background: linear-gradient(135deg, #0e87bf 0%, #075e86 100%);
+    /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0e87bf', endColorstr='#075e86',GradientType=1 );
+    /* IE6-9 fallback on horizontal gradient */
+  }
+
+  .logo:hover .fa-linkedin {
+    text-shadow: 1px 1px 0px #075e86, 2px 2px 0px #075e86, 3px 3px 0px #075e86, 4px 4px 0px #075e86, 5px 5px 0px #075e86, 6px 6px 0px #075e86, 7px 7px 0px #075e86, 8px 8px 0px #075e86, 9px 9px 0px #075e86, 10px 10px 0px #075e86, 11px 11px 0px #075e86, 12px 12px 0px #075e86, 13px 13px 0px #075e86, 14px 14px 0px #075e86, 15px 15px 0px #075e86, 16px 16px 0px #075e86, 17px 17px 0px #075e86, 18px 18px 0px #075e86, 19px 19px 0px #075e86, 20px 20px 0px #075e86, 21px 21px 0px #075e86, 22px 22px 0px #075e86, 23px 23px 0px #075e86, 24px 24px 0px #075e86, 25px 25px 0px #075e86, 26px 26px 0px #075e86, 27px 27px 0px #075e86, 28px 28px 0px #075e86, 29px 29px 0px #075e86, 30px 30px 0px #075e86, 31px 31px 0px #075e86, 32px 32px 0px #075e86, 33px 33px 0px #075e86, 34px 34px 0px #075e86, 35px 35px 0px #075e86, 36px 36px 0px #075e86, 37px 37px 0px #075e86, 38px 38px 0px #075e86, 39px 39px 0px #075e86, 40px 40px 0px #075e86;
+  }
+
+  .dribbble {
+    background: #ea4c89;
+    /* Old browsers */
+    background: -moz-linear-gradient(-45deg, #ea4c89 0%, #ea4c89 100%);
+    /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, right bottom, color-stop(0%, #ea4c89), color-stop(100%, #ea4c89));
+    /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(-45deg, #ea4c89 0%, #ea4c89 100%);
+    /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(-45deg, #ea4c89 0%, #ea4c89 100%);
+    /* Opera 11.10+ */
+    background: -ms-linear-gradient(-45deg, #ea4c89 0%, #ea4c89 100%);
+    /* IE10+ */
+    background: linear-gradient(135deg, #ea4c89 0%, #ea4c89 100%);
+    /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ea4c89', endColorstr='#ea4c89',GradientType=1 );
+    /* IE6-9 fallback on horizontal gradient */
+  }
+
+  .dribbble:hover {
+    background: #ea4c89;
+    /* Old browsers */
+    background: -moz-linear-gradient(-45deg, #ea4c89 0%, #ae2258 100%);
+    /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, right bottom, color-stop(0%, #ea4c89), color-stop(100%, #ae2258));
+    /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(-45deg, #ea4c89 0%, #ae2258 100%);
+    /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(-45deg, #ea4c89 0%, #ae2258 100%);
+    /* Opera 11.10+ */
+    background: -ms-linear-gradient(-45deg, #ea4c89 0%, #ae2258 100%);
+    /* IE10+ */
+    background: linear-gradient(135deg, #ea4c89 0%, #ae2258 100%);
+    /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ea4c89', endColorstr='#ae2258',GradientType=1 );
+    /* IE6-9 fallback on horizontal gradient */
+  }
+
+  .logo:hover .fa-dribbble {
+    text-shadow: 1px 1px 0px #ae2258, 2px 2px 0px #ae2258, 3px 3px 0px #ae2258, 4px 4px 0px #ae2258, 5px 5px 0px #ae2258, 6px 6px 0px #ae2258, 7px 7px 0px #ae2258, 8px 8px 0px #ae2258, 9px 9px 0px #ae2258, 10px 10px 0px #ae2258, 11px 11px 0px #ae2258, 12px 12px 0px #ae2258, 13px 13px 0px #ae2258, 14px 14px 0px #ae2258, 15px 15px 0px #ae2258, 16px 16px 0px #ae2258, 17px 17px 0px #ae2258, 18px 18px 0px #ae2258, 19px 19px 0px #ae2258, 20px 20px 0px #ae2258, 21px 21px 0px #ae2258, 22px 22px 0px #ae2258, 23px 23px 0px #ae2258, 24px 24px 0px #ae2258, 25px 25px 0px #ae2258, 26px 26px 0px #ae2258, 27px 27px 0px #ae2258, 28px 28px 0px #ae2258, 29px 29px 0px #ae2258, 30px 30px 0px #ae2258, 31px 31px 0px #ae2258, 32px 32px 0px #ae2258, 33px 33px 0px #ae2258, 34px 34px 0px #ae2258, 35px 35px 0px #ae2258, 36px 36px 0px #ae2258, 37px 37px 0px #ae2258, 38px 38px 0px #ae2258, 39px 39px 0px #ae2258, 40px 40px 0px #ae2258;
+  }
+
+      </style>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
 </head>
 
 <body>
@@ -270,7 +491,7 @@
       <div class="container wow fadeInUp">
         <div class="section-header">
           <h3 class="section-title">Контакты</h3>
-          <p class="section-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem, totam?</p>
+          <p class="section-description">Мы в социальных сетях</p>
         </div>
       </div>
       </div>
@@ -280,64 +501,27 @@
       <div class="container wow fadeInUp">
         <div class="row justify-content-center">
 
-          <div class="col-lg-3 col-md-4">
-
-            <div class="info">
+<!--             <div class="info">
 
               <div>
                 <i class="fa fa-phone"></i>
                 <p>+7 938 2005000</p>
               </div>
             </div>
+ -->
+          <a href="https://www.facebook.com/domalogica" class="logo facebook" target="_blank">
+            <i class="fa fa-facebook"></i>
+          </a>
 
-            <div class="social-links">
-              <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
-              <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
-              <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
-              <a href="#" class="google-plus"><i class="fa fa-google-plus"></i></a>
-              <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
-            </div>
 
-          </div>
+          <a href="https://www.instagram.com/domalogica/" class="logo linkedin" target="_blank">
+            <i class="fa fa-instagram"></i>
+          </a>
 
-          <div class="col-lg-5 col-md-8">
-            <div class="form">
-              <div id="sendmessage">Your message has been sent. Thank you!</div>
-              <div id="errormessage"></div>
-              <form class="cd-form" method="post">
-          <p class="fieldset">
-            <label class="image-replace cd-username" for="signup-username">Имя пользователя</label>
-            <input name="name" class="full-width has-padding has-border" id="signup-username" type="text" placeholder="Имя пользователя">
-            <span class="cd-error-message">Здесь сообщение об ошибке!</span>
-          </p>
-
-          <p class="fieldset">
-            <label class="image-replace cd-password" for="signup-password">Номер телефона</label>
-            <input name="phone" class="full-width has-padding has-border" id="signup-password" type="text" placeholder="Номер телефона">
-            <span class="cd-error-message">Здесь сообщение об ошибке!</span>
-          </p>
-
-          <p class="fieldset">
-            <label class="image-replace cd-password" for="signup-password">Email</label>
-            <input name="email" class="full-width has-padding has-border" id="signup-password" type="text" placeholder="Email">
-            <span class="cd-error-message">Здесь сообщение об ошибке!</span>
-          </p>
-
-          <p class="fieldset">
-            <label class="image-replace cd-email" for="signup-email">Комментарии</label>
-            <input name="comments" class="full-width has-padding has-border" id="signup-email" type="text" placeholder="Комментарии">
-            <span class="cd-error-message">Здесь сообщение об ошибке!</span>
-          </p>
-          <p class="fieldset">
-            <input class="full-width has-padding" type="submit" value="Отправить">
-          </p>
-        </form>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
+          <a href="https://t.me/tokenDL" class="logo linkedin" target="_blank">
+            <i class="fa fa-paper-plane"></i>
+          </a>
+      </div>    </div>
     </section><!-- #contact -->
 
 
