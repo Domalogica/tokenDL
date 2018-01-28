@@ -3,6 +3,7 @@
 from flask import Flask, render_template, json, request
 from flaskext.mysql import MySQL
 from werkzeug import generate_password_hash, check_password_hash
+from werkzeug.contrib.fixers import ProxyFix
 import requests, os
 mysql = MySQL()
 app = Flask(__name__)
@@ -95,6 +96,6 @@ Email: %s
 
 
 
-
+app.wsgi_app = ProxyFix(app.wsgi_app)
 if __name__ == "__main__":
     app.run(host='tokendl.com', port=80)
