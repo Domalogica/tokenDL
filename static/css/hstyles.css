@@ -40,6 +40,8 @@ img {
 
 img.in {
   max-width: 115%;
+  display: block;
+  margin: 0 auto;
 }
 
 input, textarea {
