@@ -251,7 +251,7 @@
   
        
 
-    <link href="http://codeseven.github.io/toastr/build/toastr.min.css" rel="stylesheet" type="text/css">
+    <link href="../static/css/toastr.min.css" rel="stylesheet" type="text/css">
 
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
@@ -839,6 +839,16 @@
       $('.countdown-timer').bs_countdown_timer();
     });
   </script>
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script src="../static/js/toastr.min.js"></script>
+
+  <script type="text/javascript">
+     $(function () {
+         toastr.success("<b>Ваша заявка принята.</b><br>Спасибо за интерес к нашему проекту. Мы с вами свяжемся в ближайщее время.");
+     });
+  </script>
   <script>
   var cu = new counterUp({
     start: 0, 
@@ -851,16 +861,6 @@
   cu.start();
   </script>
 
-
-
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-  <script src="http://codeseven.github.io/toastr/build/toastr.min.js"></script>
-
-  <script type="text/javascript">
-     $(function () {
-         toastr.success("<b>Ваша заявка принята.</b><br>Спасибо за интерес к нашему проекту. Мы с вами свяжемся в ближайщее время.");
-     });
-  </script>
 
 </body>
 </html>
