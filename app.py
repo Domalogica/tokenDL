@@ -20,8 +20,10 @@ def index():
     response = json.loads(response.content.decode("utf-8"))
     return response
 
-print(sorted(index().items(), key=lambda x: x[0]))
+a = sorted(index().items(), key=lambda x: x[0])
 
+for item in a:
+    print(item)
 
 @app.route('/')
 def main():
