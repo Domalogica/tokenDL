@@ -24,14 +24,14 @@ a = sorted(index().items(), key=lambda x: x[0])
 
 tokensholder = {}
 
-for item in a:
-    s = int(item[0])
-    q = item[1]
-    print(s)
-    print(a)
-    tokensholder[s].update(q)
+# for item in a:
+#     s = int(item[0])
+#     q = item[1]
+#     print(s)
+#     print(a)
+#     tokensholder[s].update(q)
 
-print(tokensholder)
+# print(tokensholder)
 
 
 @app.route('/')
