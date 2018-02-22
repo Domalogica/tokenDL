@@ -29,7 +29,7 @@ for item in a:
     q = item[1]
     print(s)
     print(q)
-    # tokensholder[s].update(q)
+    tokensholder.update({s:q})
 
 # print(tokensholder)
 
