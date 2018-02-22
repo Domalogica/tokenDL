@@ -106,6 +106,7 @@
           <p class="section-description">Информация о приобретенных токенах.</p>
         </div>
         <div class="row counters">
+
                     <div class="col-md-12">
                         <div class="card">
                             <div class="card-content table-responsive">
@@ -116,6 +117,11 @@
                                         <th>В рублях</th>
                                     </thead>
                                     <tbody>
+                                        {% for post in posts %}
+                                        <td>{{post.author.nickname}} says: <b>{{post.body}}</b></td>
+                                        <td>{{post.author.nickname}} says: <b>{{post.body}}</b></td>
+                                        <td class="text-primary">{{post.author.nickname}} says: <b>{{post.body}}</b></td>
+                                        {% endfor %}
                                         <tr>
                                             <td>100000</td>
                                             <td>12778</td>

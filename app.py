@@ -15,6 +15,12 @@ app.config['MYSQL_DATABASE_DB'] = 'BucketList'
 app.config['MYSQL_DATABASE_HOST'] = 'localhost'
 mysql.init_app(app)
 
+def index():
+    response = requests.get('http://dl.kaspsoft.com/?r=api/get-balans&authCod=lkfghfghljIFyDOP', json=self.request)
+    response = json.loads(response.content.decode("utf-8"))
+
+    print(response)
+
 
 @app.route('/')
 def main():
