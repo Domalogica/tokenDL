@@ -40,7 +40,7 @@ def faq():
 
 @app.route('/tokens')
 def token():
-    return render_template('tokens.html', posts = tokensholder)
+    return render_template('tokens.html', posts = index())
 
 @app.route('/operations')
 def operations():
