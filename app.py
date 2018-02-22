@@ -27,6 +27,8 @@ tokensholder = {}
 for item in a:
     s = int(item[0])
     q = item[1]
+    print(s)
+    print(a)
     tokensholder[s].update(q)
 
 print(tokensholder)
@@ -42,7 +44,7 @@ def faq():
 
 @app.route('/tokens')
 def token():
-    return render_template('tokens.html', posts = tokensholder)
+    return render_template('tokens.html', posts = index())
 
 @app.route('/operations')
 def operations():
