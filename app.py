@@ -18,7 +18,6 @@ mysql.init_app(app)
 def index():
     response = requests.get('http://dl.kaspsoft.com/?r=api/get-balans&authCod=lkfghfghljIFyDOP')
     response = json.loads(response.content.decode("utf-8"))
-    response = sorted(response.items(), key=lambda x: x[0])
     return response
 
 print(index())
