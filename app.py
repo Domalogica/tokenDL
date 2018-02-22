@@ -28,6 +28,7 @@ tokensholder = []
 
 for item in a:
     s = int(item[0])
+    print(item[1])
     q = item[1]['balanse']
     print(s)
     print(q)
