@@ -25,8 +25,7 @@ a = sorted(index().items(), key=lambda x: x[0])
 tokensholder = {}
 
 for item in a:
-    if item[0] != 1:
-        tokensholder[item[0]].update({item[1]})
+    tokensholder[item[0]].update({item[1]})
 
 print(tokensholder)
 
