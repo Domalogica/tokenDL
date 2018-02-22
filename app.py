@@ -28,11 +28,9 @@ tokensholder = []
 
 for item in a:
     s = int(item[0])
-    print(item[1])
-    q = item[1]['balanse']
-    print(s)
-    print(q)
-    tokensholder.append((s, q))
+    q = item[1]['balans']
+    if s != 1:
+        tokensholder.append((s, q))
 
 print(tokensholder)
 
