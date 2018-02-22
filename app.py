@@ -18,8 +18,9 @@ mysql.init_app(app)
 def index():
     response = requests.get('http://dl.kaspsoft.com/?r=api/get-balans&authCod=lkfghfghljIFyDOP', json=self.request)
     response = json.loads(response.content.decode("utf-8"))
+    return response
 
-    print(response)
+print(index())
 
 
 @app.route('/')
