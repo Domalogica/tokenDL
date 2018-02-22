@@ -26,7 +26,7 @@ tokensholder = {}
 
 for item in a:
     print(type(item[0]))
-    print(dict(item))
+    print(item)
     # tokensholder[item[0]].update({item[1]})
 
 print(tokensholder)
