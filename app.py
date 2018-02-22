@@ -31,8 +31,7 @@ for item in a:
     print(q)
     tokensholder.update({s:q})
 
-# print(tokensholder)
-
+print(tokensholder)
 
 @app.route('/')
 def main():
