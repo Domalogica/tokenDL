@@ -28,7 +28,7 @@ for item in a:
     s = int(item[0])
     q = item[1]
     print(s)
-    print(a)
+    print(q)
     # tokensholder[s].update(q)
 
 # print(tokensholder)
