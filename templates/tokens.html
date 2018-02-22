@@ -119,9 +119,9 @@
                                     <tbody>
                                         {% for post in posts %}
                                         <tr>
-                                        <td>{{post}}</td>
-                                        <td>{{posts[post]['balans']}}</td>
-                                        <td class="text-primary">{{posts[post]['balans'] * 3000}}</td>
+                                        <td>{{post[0]}}</td>
+                                        <td>{{posts[1]}}</td>
+                                        <td class="text-primary">{{posts[1] * 3000}}</td>
                                         </tr>
                                         {% endfor %}
                                         <!-- <tr>
