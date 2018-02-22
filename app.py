@@ -18,7 +18,7 @@ mysql.init_app(app)
 def index():
     response = requests.get('http://dl.kaspsoft.com/?r=api/get-balans&authCod=lkfghfghljIFyDOP')
     response = json.loads(response.content.decode("utf-8"))
-    return response
+    return response = sorted(response.items(), key=lambda x: x[0])
 
 print(index())
 
@@ -81,7 +81,6 @@ Email: %s
     #     _name = request.form['inputName']
     #     _email = request.form['inputEmail']
     #     _password = request.form['inputPassword']
-
     #     # validate the received values
     #     if _name and _email and _password:
             
