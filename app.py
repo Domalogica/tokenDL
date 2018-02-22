@@ -23,7 +23,8 @@ def index():
 a = sorted(index().items(), key=lambda x: x[0])
 
 for item in a:
-    print(item)
+    print(item[0])
+    print(item[1])
 
 @app.route('/')
 def main():
