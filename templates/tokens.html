@@ -120,8 +120,8 @@
                                         {% for post in posts %}
                                         <tr>
                                         <td>{{post}}</td>
-                                        <td>{{post}}</td>
-                                        <td class="text-primary">{{post}}</td>
+                                        <td>{{posts[post]['balans']}}</td>
+                                        <td class="text-primary">{{posts[post]['balans'] * 3000}}</td>
                                         </tr>
                                         {% endfor %}
                                         <!-- <tr>
