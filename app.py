@@ -22,14 +22,16 @@ def index():
 
 a = sorted(index().items(), key=lambda x: x[0])
 
-tokensholder = {}
+tokensholder = []
+
+
 
 for item in a:
     s = int(item[0])
     q = item[1]
     print(s)
     print(q)
-    tokensholder.update({s:q})
+    tokensholder.append({s:q})
 
 print(tokensholder)
 
@@ -43,7 +45,7 @@ def faq():
 
 @app.route('/tokens')
 def token():
-    return render_template('tokens.html', posts = index())
+    return render_template('tokens.html', posts = tokensholder)
 
 @app.route('/operations')
 def operations():
