@@ -63,7 +63,7 @@ def offer():
 
 
 @app.route('/tokens', methods=['POST','GET'])
-def sendMessage():
+def sendMessagetkn():
     _name = request.form['name']
     _phone = request.form['phone']
     _comments = request.form['comments']
