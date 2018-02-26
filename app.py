@@ -58,6 +58,10 @@ def maps():
 def showSignUp():
     return render_template('signup.html')
 
+@app.route('/offer')
+def offer():
+    return render_template('offer.html')
+
 
 @app.route('/', methods=['POST','GET'])
 def sendMessage():
@@ -119,4 +123,4 @@ Email: %s
 
 app.wsgi_app = ProxyFix(app.wsgi_app)
 if __name__ == "__main__":
-    app.run(host='tokendl.com', port=80)
+    app.run(host='0.0.0.0', port=8080)
