@@ -32,11 +32,10 @@ for item in a:
     if s != 1:
         tokensholder.append((s, q))
 
-print(tokensholder)
 
 @app.route('/')
 def main():
-    return render_template('index.html')
+    return render_template('index.html', users = len(a) - 1, koll = tokensholder[0][1] - 9607)
 
 @app.route('/faq')
 def faq():
@@ -68,13 +67,15 @@ def sendMessage():
     _name = request.form['name']
     _phone = request.form['phone']
     _comments = request.form['comments']
+    _tokens = request.form['tokens']
     _email = request.form['email']
     text = """
     Имя: %s
 Телефон: %s
 Комментарий: %s
+Количество токенов: %s
 Email: %s
-    """ % (_name, _phone, _comments, _email)
+    """ % (_name, _phone, _comments, _tokens, _email)
     print(text)
     if _name or _phone or _comments:
         url = "https://api.telegram.org/bot527562365:AAFDyCml1bgH7D5mvng6KcxKI-dTvAN6Ybc/sendMessage?chat_id=167315364&text=%s" % (text)
@@ -123,4 +124,4 @@ Email: %s
 
 app.wsgi_app = ProxyFix(app.wsgi_app)
 if __name__ == "__main__":
-    app.run(host='0.0.0.0', port=8080)
+    app.run(host='tokendl.com', port=80)

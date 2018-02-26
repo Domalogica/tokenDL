@@ -311,6 +311,14 @@
             <input name="comments" class="full-width has-padding has-border" id="signup-email" type="text" placeholder="Комментарии">
             <span class="cd-error-message">Здесь сообщение об ошибке!</span>
           </p>
+
+          
+
+          <p class="fieldset">
+            <label class="image-replace cd-email" for="signup-email">Токены</label>
+            <input name="tokens" class="full-width has-padding has-border" id="signup-email" type="text" placeholder="Укажите, сколько токенов вы намерены приобрести">
+            <span class="cd-error-message">Здесь сообщение об ошибке!</span>
+          </p>
           <p class="fieldset">
             <input class="full-width has-padding" type="submit" value="Отправить">
           </p>
@@ -340,7 +348,7 @@
                 </div>
                 <div class="col-sm-6">
                   <div class="numcard">
-                    <span class="numcard-number">4323</span>
+                    <span class="numcard-number">{{koll}}</span>
                     <span class="numcard-desc">Токенов в продаже</span>
                   </div>
                 </div>
@@ -390,7 +398,7 @@
           </div>
 
           <div class="col-lg-2 col-6 text-center">
-            <span id="primo" class="countup" cup-end="4323" cup-append="" cup-prepend=""></span>
+            <span id="primo" class="countup" cup-end="{{koll}}" cup-append="" cup-prepend=""></span>
             <p>Токенов в продаже</p>
           </div>
 
@@ -400,7 +408,7 @@
           </div>
 
           <div class="col-lg-2 col-6 text-center">
-            <span class="countup" cup-end="34" cup-append="" cup-prepend=""></span>
+            <span class="countup" cup-end="{{users}}" cup-append="" cup-prepend=""></span>
             <p>Всего участников</p>
           </div>
 
