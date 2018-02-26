@@ -62,6 +62,37 @@ def offer():
     return render_template('offer.html')
 
 
+@app.route('/tokens', methods=['POST','GET'])
+def sendMessage():
+    _name = request.form['name']
+    _phone = request.form['phone']
+    _comments = request.form['comments']
+    _tokens = request.form['tokens']
+    _email = request.form['email']
+    text = """
+    Имя: %s
+Телефон: %s
+Комментарий: %s
+Количество токенов: %s
+Email: %s
+    """ % (_name, _phone, _comments, _tokens, _email)
+    print(text)
+    if _name or _phone or _comments:
+        url = "https://api.telegram.org/bot527562365:AAFDyCml1bgH7D5mvng6KcxKI-dTvAN6Ybc/sendMessage?chat_id=167315364&text=%s" % (text)
+        requests.post(url)   
+        url = "https://api.telegram.org/bot527562365:AAFDyCml1bgH7D5mvng6KcxKI-dTvAN6Ybc/sendMessage?chat_id=70025022&text=%s" % (text)
+        requests.post(url)   
+        url = "https://api.telegram.org/bot527562365:AAFDyCml1bgH7D5mvng6KcxKI-dTvAN6Ybc/sendMessage?chat_id=65472004&text=%s" % (text)
+        requests.post(url)   
+        url = "https://api.telegram.org/bot527562365:AAFDyCml1bgH7D5mvng6KcxKI-dTvAN6Ybc/sendMessage?chat_id=-303230127&text=%s" % (text)
+        requests.post(url)   
+        url = "https://api.telegram.org/bot527562365:AAFDyCml1bgH7D5mvng6KcxKI-dTvAN6Ybc/sendMessage?chat_id=34436430&text=%s" % (text)
+        requests.post(url)   
+        url = "https://api.telegram.org/bot527562365:AAFDyCml1bgH7D5mvng6KcxKI-dTvAN6Ybc/sendMessage?chat_id=27390261&text=%s" % (text)
+        requests.post(url) 
+    return render_template('ok.html')
+
+
 @app.route('/', methods=['POST','GET'])
 def sendMessage():
     _name = request.form['name']
