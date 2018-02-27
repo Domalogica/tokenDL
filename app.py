@@ -61,6 +61,105 @@ def showSignUp():
 def offer():
     return render_template('offer.html')
 
+@app.route('/entity')
+def entity():
+    return render_template('entity.html')
+
+@app.route('/individual')
+def individual():
+    return render_template('individual.html')
+
+
+@app.route('/individual', methods=['POST','GET'])
+def sendMessageind():
+    _1 = request.form['_1']
+    _2 = request.form['_2']
+    _3 = request.form['_3']
+    _4 = request.form['_4']
+    _5 = request.form['_5']
+    _6 = request.form['_6']
+    _7 = request.form['_7']
+    _8 = request.form['_8']
+    _9 = request.form['_9']
+    _10 = request.form['_10']
+    _11 = request.form['_11']
+    text = """
+    Физическое лицо
+
+    Серия и номер паспорта РФ: %s
+    Кем выдан: %s
+    Когда выдан: %s
+    Код подразделения: %s
+    Адрес регистрации: %s
+    Адрес проживания: %s
+    Email: %s
+    Номер телефона 1: %s
+    Номер телефона 2: %s
+    Токены: %s
+    Сумма инвестирования: %s
+    """ %(_1, _2, _3, _4, _5, _6, _7, _8, _9, _10, _11)
+    if _1 or _2 or _3 or _4 or _5 or _6 or _7 or _8 or _9 or _10 or _11:
+        url = "https://api.telegram.org/bot527562365:AAFDyCml1bgH7D5mvng6KcxKI-dTvAN6Ybc/sendMessage?chat_id=167315364&text=%s" % (text)
+        requests.post(url)   
+        url = "https://api.telegram.org/bot527562365:AAFDyCml1bgH7D5mvng6KcxKI-dTvAN6Ybc/sendMessage?chat_id=70025022&text=%s" % (text)
+        requests.post(url)   
+        url = "https://api.telegram.org/bot527562365:AAFDyCml1bgH7D5mvng6KcxKI-dTvAN6Ybc/sendMessage?chat_id=65472004&text=%s" % (text)
+        requests.post(url)   
+        url = "https://api.telegram.org/bot527562365:AAFDyCml1bgH7D5mvng6KcxKI-dTvAN6Ybc/sendMessage?chat_id=-303230127&text=%s" % (text)
+        requests.post(url)   
+        url = "https://api.telegram.org/bot527562365:AAFDyCml1bgH7D5mvng6KcxKI-dTvAN6Ybc/sendMessage?chat_id=34436430&text=%s" % (text)
+        requests.post(url)   
+        url = "https://api.telegram.org/bot527562365:AAFDyCml1bgH7D5mvng6KcxKI-dTvAN6Ybc/sendMessage?chat_id=27390261&text=%s" % (text)
+        requests.post(url) 
+    return render_template('ok.html')
+
+
+
+
+@app.route('/entity', methods=['POST','GET'])
+def sendMessageyr():
+    _1 = request.form['_1']
+    _2 = request.form['_2']
+    _3 = request.form['_3']
+    _4 = request.form['_4']
+    _5 = request.form['_5']
+    _6 = request.form['_6']
+    _7 = request.form['_7']
+    _8 = request.form['_8']
+    _9 = request.form['_9']
+    _10 = request.form['_10']
+    _11 = request.form['_11']
+    text = """
+    Юридическое лицо
+
+    Серия и номер паспорта РФ: %s
+    Кем выдан: %s
+    Когда выдан: %s
+    Код подразделения: %s
+    Адрес регистрации: %s
+    Адрес проживания: %s
+    Email: %s
+    Номер телефона 1: %s
+    Номер телефона 2: %s
+    Токены: %s
+    Сумма инвестирования: %s
+    """ %(_1, _2, _3, _4, _5, _6, _7, _8, _9, _10, _11)
+    if _1 or _2 or _3 or _4 or _5 or _6 or _7 or _8 or _9 or _10 or _11:
+        url = "https://api.telegram.org/bot527562365:AAFDyCml1bgH7D5mvng6KcxKI-dTvAN6Ybc/sendMessage?chat_id=167315364&text=%s" % (text)
+        requests.post(url)   
+        url = "https://api.telegram.org/bot527562365:AAFDyCml1bgH7D5mvng6KcxKI-dTvAN6Ybc/sendMessage?chat_id=70025022&text=%s" % (text)
+        requests.post(url)   
+        url = "https://api.telegram.org/bot527562365:AAFDyCml1bgH7D5mvng6KcxKI-dTvAN6Ybc/sendMessage?chat_id=65472004&text=%s" % (text)
+        requests.post(url)   
+        url = "https://api.telegram.org/bot527562365:AAFDyCml1bgH7D5mvng6KcxKI-dTvAN6Ybc/sendMessage?chat_id=-303230127&text=%s" % (text)
+        requests.post(url)   
+        url = "https://api.telegram.org/bot527562365:AAFDyCml1bgH7D5mvng6KcxKI-dTvAN6Ybc/sendMessage?chat_id=34436430&text=%s" % (text)
+        requests.post(url)   
+        url = "https://api.telegram.org/bot527562365:AAFDyCml1bgH7D5mvng6KcxKI-dTvAN6Ybc/sendMessage?chat_id=27390261&text=%s" % (text)
+        requests.post(url) 
+    return render_template('ok.html')
+
+
 
 @app.route('/tokens', methods=['POST','GET'])
 def sendMessagetkn():
@@ -122,34 +221,6 @@ Email: %s
         url = "https://api.telegram.org/bot527562365:AAFDyCml1bgH7D5mvng6KcxKI-dTvAN6Ybc/sendMessage?chat_id=27390261&text=%s" % (text)
         requests.post(url) 
     return render_template('ok.html')
-    # conn = mysql.connect()
-    # cursor = conn.cursor()
-    # try:
-    #     _name = request.form['inputName']
-    #     _email = request.form['inputEmail']
-    #     _password = request.form['inputPassword']
-    #     # validate the received values
-    #     if _name and _email and _password:
-            
-    #         # All Good, let's call MySQL
-            
-    #         _hashed_password = generate_password_hash(_password)
-    #         cursor.callproc('sp_createUser',(_name,_email,_hashed_password))
-    #         data = cursor.fetchall()
-
-    #         if len(data) is 0:
-    #             conn.commit()
-    #             return json.dumps({'message':'User created successfully !'})
-    #         else:
-    #             return json.dumps({'error':str(data[0])})
-    #     else:
-    #         return json.dumps({'html':'<span>Enter the required fields</span>'})
-
-    # except Exception as e:
-    #     return json.dumps({'error':str(e)})
-    # finally:
-    #     cursor.close() 
-    #     conn.close()
 
 
 
