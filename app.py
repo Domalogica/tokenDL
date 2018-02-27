@@ -20,22 +20,20 @@ def index():
     response = json.loads(response.content.decode("utf-8"))
     return response
 
-a = sorted(index().items(), key=lambda x: x[0])
-
-tokensholder = []
-
-
-
-for item in a:
-    s = int(item[0])
-    q = item[1]['balans']
-    if s != 1:
-        tokensholder.append((s, q))
+def sad():
+    a = sorted(index().items(), key=lambda x: x[0])
+    tokensholder = []
+    for item in a:
+        s = int(item[0])
+        q = item[1]['balans']
+        if s != 1:
+            tokensholder.append((s, q))
+    return tokensholder
 
 
 @app.route('/')
 def main():
-    return render_template('index.html', users = len(a) - 1, koll = tokensholder[0][1] - 9607)
+    return render_template('index.html', users = len(sad()) - 1, koll = sad()[0][1] - 9607)
 
 @app.route('/faq')
 def faq():
@@ -43,7 +41,7 @@ def faq():
 
 @app.route('/tokens')
 def token():
-    return render_template('tokens.html', posts = tokensholder)
+    return render_template('tokens.html', posts = sad())
 
 @app.route('/operations')
 def operations():
