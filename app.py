@@ -33,7 +33,7 @@ def sad():
 
 @app.route('/')
 def main():
-    return render_template('index.html', users = len(sad()), koll = sad()[0][1] - 9607)
+    return render_template('index.html', users = len(sad()) - 1, koll = sad()[0][1] - 9607)
 
 @app.route('/faq')
 def faq():
