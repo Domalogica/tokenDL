@@ -127,6 +127,7 @@ def sendMessageyr():
     _9 = request.form['_9']
     _10 = request.form['_10']
     _11 = request.form['_11']
+    _0 = request.form['_0']
     text = """
 Юридическое лицо
 
