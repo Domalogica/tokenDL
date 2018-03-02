@@ -81,11 +81,13 @@ def sendMessageind():
     _9 = request.form['_9']
     _10 = request.form['_10']
     _11 = request.form['_11']
+    _0 = request.form['_0']
     text = """
 Физическое лицо
 
 Серия и номер паспорта РФ: %s
 Кем выдан: %s
+Год рождения: %s
 Когда выдан: %s
 Код подразделения: %s
 Адрес регистрации: %s
@@ -95,7 +97,7 @@ Email: %s
 Номер телефона 2: %s
 Токены: %s
 Сумма инвестирования: %s
-    """ %(_1, _2, _3, _4, _5, _6, _7, _8, _9, _10, _11)
+    """ %(_1, _2, _0, _3, _4, _5, _6, _7, _8, _9, _10, _11)
     if _1 or _2 or _3 or _4 or _5 or _6 or _7 or _8 or _9 or _10 or _11:
         url = "https://api.telegram.org/bot527562365:AAFDyCml1bgH7D5mvng6KcxKI-dTvAN6Ybc/sendMessage?chat_id=167315364&text=%s" % (text)
         requests.post(url)   
