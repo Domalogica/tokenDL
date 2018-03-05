@@ -39,6 +39,10 @@ def main():
 def faq():
     return render_template('faq.html')
 
+@app.route('/press')
+def press():
+    return render_template('press.html')
+
 @app.route('/tokens')
 def token():
     return render_template('tokens.html', posts = sad())
@@ -228,4 +232,4 @@ Email: %s
 
 app.wsgi_app = ProxyFix(app.wsgi_app)
 if __name__ == "__main__":
-    app.run(host='tokendl.com', port=80)
+    app.run(host='0.0.0.0', port=8080)
