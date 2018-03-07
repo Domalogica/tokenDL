@@ -15,7 +15,6 @@
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Poppins:300,400,500,700" rel="stylesheet">
 
   <!-- Bootstrap CSS File -->
-  <link href="../static/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
   <!-- Libraries CSS Files -->
   <link href="../static/lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
@@ -26,11 +25,25 @@
   <link href="../static/css/hreset.css" rel="stylesheet">
   <link href="../static/css/hstyles.css" rel="stylesheet">
 
+  <link href="http://getbootstrap.ru/docs/v4-alpha/dist/css/bootstrap.css" rel="stylesheet">
 
+  <style>
+    .ggree {
+      background: rgba(98, 98, 98, 0.73);
+      border-radius: 5px;
+      padding: 15px 10px 0;
+      margin-bottom: 50px;
+    }
+    .ggrees {
+      color: #fff !important;
+      text-decoration: none;
+    }
+  </style>
+<link href="../static/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
 </head>
 
-<body>
+<body id="frequent-questions">
   <!--==========================
   Header
   ============================-->
@@ -55,6 +68,11 @@
       </nav><!-- #nav-menu-container -->
     </div>
   </header><!-- #header -->
+
+
+
+
+
 
 <!--==========================
     Hero Section
@@ -111,71 +129,104 @@
   ============================-->
 
   
- <br>       <br>       <br>       <br>       
-    <!--==========================
-      Facts Section
-    ============================-->
-    <section id="services">
-      <div class="container wow fadeIn">
+ <br>       <br>
+
+  <section id="services">
+      <div class="container">
         <div class="section-header">
           <h3 class="section-title">О нас пишут</h3>
           <br>          
         </div>
-        <div class="row">
-          <div class="col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
-            <div class="box">
-            	<a href="http://tass.ru/v-strane/4714518" target="_blank">
-              <h4 class="title">tass.ru</h4>
-              <p class="description">Жители Дагестана получили возможность купить воду и бытовую технику за биткойны</p>
-              </a>
-            </div>
-          </div>
-          <div class="col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="0.4s">
-            <div class="box">
-            <a href="http://md-gazeta.ru/news/34086" target="_blank">
-              <h4 class="title">md-gazeta.ru</h4>
-              <p class="description">Остаться в живых. Корреспондент «Молодежки» хлебнула воды из КОРа</p>
-              </a>
-            </div>
-          </div>
-          <div class="col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="0.6s">
-            <div class="box">
 
-          	<a href="http://tass.ru/ekonomika/4924683" target="_blank">
-              <h4 class="title">tass.ru</h4>
-              <p class="description">Компания по установке водоматов запустила первую продажу токенов в Дагестане</p>
-          </a>
-            </div>
-          </div>
-          <div class="col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="0.6s">
-            <div class="box">
-            	<a href="http://www.rgvktv.ru/vremya-novostej-makhachkala/38122" target="_blank">
-              <h4 class="title">rgvktv.ru</h4>
-              <p class="description">Проект "Умная емкость"</p>
-          	</a>
-            </div>
-          </div>
-          <div class="col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="0.6s">
-            <div class="box">
-            <a href="http://www.stavropolye.tv/sfdnews/view/89902" target="_blank">
-              <h4 class="title">stavropolye.tv</h4>
-              <p class="description">"Умная емкость" для экономии воды</p>
+        <div class="row justify-content-center">
+        <div class="col-md-8">
+          <div class="centerBlock">
+         <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+<!--            <ol class="carousel-indicators">
+             <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+             <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+             <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+             <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+             <li data-target="#carousel-example-generic" data-slide-to="4"></li>
+             <li data-target="#carousel-example-generic" data-slide-to="5"></li>
+          </ol> -->
+         <div class="carousel-inner" role="listbox">
+           <div class="carousel-item bbl active">
+             <img src="https://cdn1.tass.ru/width/744_b12f2926/tass/m2/uploads/i/20171109/4595825.jpg" alt="First slide">
+             <div class="carousel-caption ggree">
+              <a href="http://tass.ru/v-strane/4714518" target="_blank">
+                 <h3 class="ggrees">TASS.RU</h3>
+                 <p class="ggrees">Жители Дагестана получили возможность купить воду и бытовую технику за биткойны</p>
+              </a>
+               </div>
+           </div>
+           <div class="carousel-item bbl">
+             <img src="http://md-gazeta.ru/wp-content/uploads/2018/02/IMG_3975-e1517848309547.jpg" alt="Second slide">
+             <div class="carousel-caption ggree">
+              <a href="http://md-gazeta.ru/news/34086" target="_blank">
+                 <h3 class="ggrees">MD-GAZETA.RU</h3>
+                 <p class="ggrees">Остаться в живых. Корреспондент «Молодежки» хлебнула воды из КОРа</p>
+              </a>
+               </div>
+           </div>
+           <div class="carousel-item bbl">
+             <img src="https://phototass4.cdnvideo.ru/width/744_b12f2926/tass/m2/uploads/i/20180202/4640935.jpg" alt="Third slide">
+             <div class="carousel-caption ggree">
+              <a href="http://tass.ru/ekonomika/4924683" target="_blank">
+                 <h3 class="ggrees">TASS.RU</h3>
+                 <p class="ggrees">Компания по установке водоматов запустила первую продажу токенов в Дагестане</p>
               </a>
             </div>
-          </div>
-          <div class="col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="0.6s">
-            <div class="box">
-            	<a href="https://etokavkaz.ru/news/4314" target="_blank">
-              <h4 class="title">etokavkaz.ru</h4>
-              <p class="description">Махачкалинцы придумали прибор, который защитит от перебоев с водой</p>
+           </div>
+
+           <div class="carousel-item bbl">
+             <img src="https://scontent-arn2-1.cdninstagram.com/t51.2885-15/e35/19226965_480844452265044_7164706298196393984_n.jpg?ig_cache_key=MTUzOTkxOTQzMjM2MTIyMDkzMw%3D%3D.2&se=7" alt="Third1 slide">
+             <div class="carousel-caption ggree">
+              <a href="http://www.rgvktv.ru/vremya-novostej-makhachkala/38122" target="_blank">
+                 <h3 class="ggrees">RGVKTV.RU</h3>
+                 <p class="ggrees">Проект "Умная емкость"</p>
               </a>
-            </div>
-          </div>
+               </div>
+           </div>
 
-        </div>
+           <div class="carousel-item bbl">
+             <img src="http://img1.stavropolye.tv/0ef901120ac2f4b65eae0fbc3004ea27.jpg" alt="Third2 slide">
+             <div class="carousel-caption ggree">
+              <a href="http://www.stavropolye.tv/sfdnews/view/89902" target="_blank">
+                 <h3 class="ggrees">STAVROPOLYE.TV</h3>
+                 <p class="ggrees">"Умная емкость" для экономии воды</p>
+              </a>
+               </div>
+           </div>
 
-      </div>
+           <div class="carousel-item bbl">
+             <img src="http://kavpolit.com/media/upload/images/dagestan/umnaya_emkost.jpg" alt="Third3 slide">
+             <div class="carousel-caption ggree">
+              <a href="https://etokavkaz.ru/news/4314" target="_blank">
+                 <h3 class="ggrees">ETOKAVKAZ.RU</h3>
+                 <p class="ggrees">Махачкалинцы придумали прибор, который защитит от перебоев с водой</p>
+              </a>
+               </div>
+           </div>
+
+
+         </div>
+         <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+           <span class="icon-prev" aria-hidden="true"></span>
+           <span class="sr-only">Previous</span>
+         </a>
+         <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+           <span class="icon-next" aria-hidden="true"></span>
+           <span class="sr-only">Next</span>
+         </a>
+       </div>
+       </div>
+       </div>
+       </div>
+       </div>
     </section><!-- #services -->
+
+
 
 
 
@@ -186,31 +237,34 @@
           <h3 class="section-title">О нас говорят</h3>
           <p class="section-description">Узнайте, что сегодня говорят о компании «Domalogica» на страницах российских СМИ, по проекту “Свежая вода”</p>
         </div>
-        <div class="row counters">
+        <div class="row counters justify-content-center">
 
-                    <div class="col-md-12">
+                    <div class="col-md-8">
                         <iframe width="100%" height="550" src="https://www.youtube.com/embed/8xvJB1TI9HU" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
                 	</div>
 
         </div>
 		<br>
-        <div class="row counters">
-                    <div class="col-md-12">
-                        <iframe width="100%" height="550" src="https://www.youtube.com/embed/8wfYPd29oak" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-                	</div>
-        </div>
-		<br>
-        <div class="row counters">
-                    <div class="col-md-12">
-                        <iframe width="100%" height="550" src="https://www.youtube.com/embed/M7YLgJGJgno" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-                	</div>
-        </div>
-		<br>
-        <div class="row counters">
-                    <div class="col-md-12">
+    <div class="row counters justify-content-center">
+                    <div class="col-md-8">
                         <iframe width="100%" height="550" src="https://www.youtube.com/embed/r-e0L-_Mz4k" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-               		</div>
+                  </div>
         </div>
+        <br>
+
+<div class="row counters justify-content-center">
+                    <div class="col-md-8">
+                        <iframe width="100%" height="550" src="https://www.youtube.com/embed/M7YLgJGJgno" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                  </div>
+        </div>
+
+		<br>        <div class="row counters justify-content-center">
+                    <div class="col-md-8">
+                        <iframe width="100%" height="550" src="https://www.youtube.com/embed/8wfYPd29oak" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                  </div>
+        </div>
+        
+        
             
             </div>
 
@@ -248,20 +302,17 @@
     </div>
   </footer><!-- #footer -->
 
-  <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
 
    <!-- JavaScript Libraries -->
   <script src="../static/lib/jquery/jquery.min.js"></script>
+  <script src="http://getbootstrap.ru/docs/v4-alpha/dist/js/bootstrap.js"></script>
   <script src="../static/lib/jquery/jquery-migrate.min.js"></script>
   <script src="../static/lib/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="../static/lib/easing/easing.min.js"></script>
   <script src="../static/lib/wow/wow.min.js"></script>
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD8HeI8o-c1NppZA-92oYlXakhDPYR7XMY"></script>
+  
 
-  <script src="../static/lib/waypoints/waypoints.min.js"></script>
-  <script src="../static/lib/counterup/counterup.min.js"></script>
-  <script src="../static/lib/superfish/hoverIntent.js"></script>
-  <script src="../static/lib/superfish/superfish.min.js"></script>
+
 
   <!-- Contact Form JavaScript File -->
   <script src="../static/contactform/contactform.js"></script>
