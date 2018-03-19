@@ -8,7 +8,6 @@ import requests, os
 mysql = MySQL()
 app = Flask(__name__)
 app._static_folder = os.path.abspath("static/")
-app._static_folder = os.path.abspath("/")
 # MySQL configurations
 app.config['MYSQL_DATABASE_USER'] = 'root'
 app.config['MYSQL_DATABASE_PASSWORD'] = '7087'
@@ -230,6 +229,10 @@ Email: %s
     return render_template('ok.html', users = len(sad()) - 1, koll = sad()[0][1] - 9607)
 
 
+@app.route('/googlea3d61d09759ef0a6.html', methods=['GET'])
+def sender():
+    response = make_response(open('googlea3d61d09759ef0a6.html').read())
+    return response
 
 app.wsgi_app = ProxyFix(app.wsgi_app)
 if __name__ == "__main__":
