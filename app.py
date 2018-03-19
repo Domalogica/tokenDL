@@ -232,6 +232,7 @@ Email: %s
 @app.route('/googlea3d61d09759ef0a6.html', methods=['GET'])
 def sender():
     response = make_response(open('googlea3d61d09759ef0a6.html').read())
+    response.headers["Content-type"] = "text/plain"
     return response
 
 app.wsgi_app = ProxyFix(app.wsgi_app)
