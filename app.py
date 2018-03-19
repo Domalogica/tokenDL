@@ -1,6 +1,6 @@
 #! /usr/bin/env python
 # -*- coding: utf-8 -*-
-from flask import Flask, render_template, json, request
+from flask import Flask, render_template, json, request, Response
 from flaskext.mysql import MySQL
 from werkzeug import generate_password_hash, check_password_hash
 from werkzeug.contrib.fixers import ProxyFix
