@@ -71,6 +71,10 @@ def entity():
 def individual():
     return render_template('individual.html')
 
+@app.route('/waterpage')
+def waterpage():
+    return render_template('waterpage.html')
+
 
 @app.route('/individual', methods=['POST','GET'])
 def sendMessageind():
